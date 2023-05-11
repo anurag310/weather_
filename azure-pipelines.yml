@@ -37,6 +37,6 @@ stages:
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
-        buildContext: **
+        buildContext: **/Dockerfile
         tags: |
           $(tag)
